@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/manager-product.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./login.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://drive.gianhangvn.com/image/ca-phe-chon-legend-trung-nguyen-637592j12208.jpg"
+      type="image/x-icon"
+    />
+
+    <title>Trang chủ Admin</title>
+  </head>
+  <body>
+    <header>
+    <div class="container-body">
+      <div class="container-content">
+        <!-- ----left---- -->
+        <div class="container-nav-left">
+          <div class="nav-left-top">
+            <i class="bx bxs-user-detail"></i>
+            <div class="title-admin">Trang Chủ Admin</div>
+          </div>
+          <ul class="nav-left-ul">
+            <li>
+              <a class="nav-table" href="http://127.0.0.1:5500/Page/manager-user.html">
+                <i class="bx bxs-user-account"></i>
+                <p>Quản Lý Người Dùng</p>
+              </a>
+            </li>
+            <li>
+              <a class="nav-table" href="http://127.0.0.1:5500/Page/manager-product.html"
+                ><i class="bx bx-cuboid"></i>
+                <p>Quản Lý Sản Phẩm</p>
+              </a>
+            </li>
+            <li>
+              <a class="nav-table" href="http://127.0.0.1:5500/Page/manager-oder.html"
+                ><i class="bx bxs-objects-vertical-bottom"></i>
+                <p>Quản Lý Đơn Hàng</p>
+              </a>
+            </li>
+          </ul> 
+        </div>
+
+        <!-- render -->
+        <div class="container-nav-right">
+          <div class="nav-top-info">
+            <div class="top-left-page">Trang chủ</div>
+            <div class="input-search">
+              <input type="text" placeholder="Tìm...." id="input-search" oninput="handleSearch()"/><i
+                class="bx bx-search-alt-2"
+              ></i>
+            <a href="#form"><div class="containerAdd"><button class="addProduct" onclick="handleAdd()">Thêm sản phẩm</button></div></a>
+
+            </div>
+          </div>
+          <div class="container-table">
+            <table class="render" cellpadding="10px">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Tên sản phẩm</th>
+                  <th>Hình ảnh</th>
+                  <th>Giá</th>
+                  <th>Chỉnh Sửa </th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        
+        <!------------->
+      </div>
+      
+      
+     </div> 
+     <div class="container-form1">
+     <div action="" id="form">
+      <h3>Thêm sản phẩm mới</h3>
+      <input id="id" class="inputAdd" type="text" placeholder="id sản phẩm">
+      <input id="idName" class="inputAdd" type="text" placeholder="Tên sản phẩm">
+      <input id="idImg" class="inputAdd" type="file" placeholder="Hình ảnh">
+      <input id="idPrice" class="inputAdd" type="text" placeholder="Giá">
+      <!-- <input id="idKG" class="inputAdd" type="text" placeholder="Khối lượng"> -->
+      <!-- <textarea class="addTexera" class="" placeholder="Miêu tả sản phẩm" name="" id="" cols="30" rows="10"></textarea> -->
+      <button class="btnAdd" onclick="handleAdd()" type="text">Thêm</button>
+      
+    </div>
+    </div>
+    <!-- ---------- -->
+    <div class="container-form2">
+      <div action="" id="form2">
+       <h3>Sửa sản phẩm</h3>
+       <input id="idEdit" class="inputAdd" type="text" placeholder="id sản phẩm" readonly>
+       <input id="idNameEdit" class="inputAdd" type="text" placeholder="Tên sản phẩm">
+       <input id="idImgEdit" class="inputAdd" type="file" placeholder="Hình ảnh">
+       <input id="idPriceEdit" class="inputAdd" type="text" placeholder="Giá">
+       <!-- <input id="idKG" class="inputAdd" type="text" placeholder="Khối lượng"> -->
+       <!-- <textarea class="addTexera" class="" placeholder="Miêu tả sản phẩm" name="" id="" cols="30" rows="10"></textarea> -->
+       <button onclick="handleUpdate()" class="btnAdd2" id="btnUpdate" type="text">Update</button>
+           
+     </div>
+     </div>
+
+    </div>
+
+   
+  </header>
+   
+  
+
+    <script src="../Js/manager-product.js".js"></script>
+  </body>
+</html>

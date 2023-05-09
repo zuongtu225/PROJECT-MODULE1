@@ -1,0 +1,70 @@
+img {
+  width: 100%;
+}
+header {
+  background-image: url("../img/imgform2.jpg");
+  position: relative;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+}
+.go {
+  align-items: center;
+  padding: 15px 50px;
+}
+.go a {
+  text-decoration: none;
+  color: white;
+}
+.go i {
+  text-decoration: none;
+  color: white;
+}
+.login {
+  transition: transform 1s ease;
+  border: 1px solid rgb(240, 238, 238);
+  border-radius: 7px;
+  text-align: center;
+  right: 39%;
+  top: 30%;
+  position: absolute;
+  padding: 15px 20px;
+}
+.login:hover {
+  transform: scale(1.1);
+}
+.p_title {
+  font-family: "Darumadrop One", cursive;
+  padding: 10px 0;
+  border-radius: 5px;
+  background-color: #000000;
+  font-weight: bold;
+  color: #f1efef;
+  font-size: 30px;
+  margin-top: 0;
+  width: 100%;
+}
+input {
+  opacity: 0.8;
+  padding: 10px 40px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 7px;
+  background-color: #f9f9f9;
+}
+input:hover {
+  border: 1px solid white;
+  background-color: #f2f2f2;
+}
+.input-login {
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+.input-login:hover {
+  transform: scale(1.2);
+}
+
+.error {
+  color: rgb(229, 7, 148);
+  background-color: #121212;
+}

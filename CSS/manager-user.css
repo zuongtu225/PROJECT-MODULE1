@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-body {
+  background-color: #f0ecec;
+  padding: 15px;
+  width: 100%;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.container-content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 7px;
+}
+.container-nav-left {
+  background-color: #000000;
+  text-align: center;
+  align-items: center;
+  border: 3px solid #090909;
+  border-radius: 10px;
+}
+.nav-left-top {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  gap: 10px;
+  border-radius: 6px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+.nav-left-top i {
+  color: #000000;
+  font-size: 50px;
+}
+.nav-left-top img {
+  width: 50px;
+  height: 50px;
+}
+.top-left-page {
+  font-size: 74px;
+  font-family: "Darumadrop One", cursive;
+}
+
+table {
+  background-color: #ffffff;
+}
+.title-admin {
+  font-size: 19px;
+  color: #80ceff;
+  font-family: "Braah One", cursive;
+  font-weight: bold;
+}
+.nav-table {
+  margin: 5px 0px;
+  width: 100%;
+  border: 1px solid rgb(197, 181, 181);
+  font-family: "Darumadrop One", cursive;
+  font-weight: bold;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.nav-table i {
+  color: rgb(250, 250, 250);
+  font-size: 30px;
+}
+.nav-table p {
+  color: rgb(238, 237, 237);
+}
+.nav-left-ul {
+  list-style-type: none;
+}
+.nav-table {
+  text-decoration: none;
+}
+.nav-top-info {
+  margin-right: 10px;
+  margin-top: 19px;
+  border: 4px solid rgb(0, 212, 249);
+  border-radius: 13px;
+  gap: 20px;
+  padding: 10px;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  align-items: center;
+  background-color: #fff;
+}
+.top-right-info {
+  font-family: "Darumadrop One", cursive;
+  display: flex;
+  gap: 10px;
+}
+
+#input-search {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid rgb(127, 209, 241);
+}
+
+.input-search {
+  padding: 40px 0px;
+  position: relative;
+}
+
+.input-search i {
+  font-size: 25px;
+  opacity: 0.8;
+  position: absolute;
+  right: 10px;
+  top: 49px;
+}
+.singup {
+  padding: 40px 10px;
+  transition: tranform 6s ease;
+  cursor: pointer;
+  gap: 5px;
+  display: flex;
+  margin-left: 4 0px;
+}
+.singup:hover {
+  transform: scale(1.1);
+}
+.singup a {
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+  margin-top: 5px;
+}
+.singup i {
+  font-size: 29px;
+  margin-top: 5px;
+}
+.container-table {
+  padding: 30px 10px;
+}
+table {
+  border: 3px solid rgb(77, 211, 255);
+  border-collapse: collapse;
+}
+th,
+tr,
+td {
+  padding: 10px 50px;
+  border: 1px solid rgb(77, 211, 255);
+}
+.action {
+  gap: 10px;
+  display: flex;
+}
+.btnEdit {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #16c860;
+  color: #ffffff;
+  border-radius: 2px;
+  border: none;
+}
+.btnDelete {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #f53737;
+  color: #ffffff;
+  border-radius: 2px;
+  border: none;
+}
+.btnShow {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #04b1d4;
+  color: #ffffff;
+  border-radius: 2px;
+  border: none;
+}
+.status {
+  padding: 5px 20px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.status.blue {
+  color: rgb(0, 204, 255);
+}
+
+.status.red {
+  color: rgb(255, 0, 0);
+}

@@ -1,0 +1,480 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+/* --------------head----------------- */
+header {
+  background-color: #020202;
+  border: 2px solid rgb(214, 213, 213);
+  position: relative;
+  box-sizing: border-box;
+}
+.logo img {
+  border-radius: 10%;
+  width: 100%;
+  height: 80px;
+}
+
+.top__header {
+  padding: 0 10px;
+  align-items: center;
+  display: flex;
+  border-bottom: 2px solid rgb(230, 230, 230);
+  width: 100%;
+  overflow: hidden;
+  justify-content: space-around;
+}
+.top__header__left {
+  margin-left: 10px;
+  align-items: center;
+}
+.top__header__right {
+  gap: 10px;
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.top__header__right a {
+  color: rgb(9, 9, 9);
+
+  text-decoration: none;
+}
+.top__header__left a {
+  color: #ec0000;
+  text-decoration: none;
+}
+.header__main__button1 {
+  transition: transform 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  border: 3px solid #08d6f1;
+  background-color: #fcfaf7;
+  padding: 6px 115px;
+  border-radius: 5px;
+}
+.header__main__button1 a {
+  text-decoration: none;
+  color: rgb(8, 7, 7);
+}
+.header__main__button:hover {
+  transform: scale(1.1);
+}
+.header__main__button2 {
+  box-shadow: 6px 3px 12px #9efef8;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  background-color: #ffffff;
+  padding: 6px 15px;
+  border-radius: 15px;
+}
+
+.header__main__button a {
+  width: 50px;
+}
+
+.login {
+  transition: transform 1s ease;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 7px 15px;
+  border-radius: 15px;
+}
+.login:hover {
+  transform: scale(1.1);
+  color: #c1c1c1;
+}
+.boderLi {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  opacity: 0.4;
+}
+.cart {
+  color: black;
+  font-size: 25px;
+}
+.cart:hover {
+  color: #918f8f;
+}
+/* ---------navbar-------------- */
+.navbar {
+  background-color: #000000;
+  border-bottom: 1px solid rgb(225, 222, 222);
+  justify-content: space-between;
+  display: flex;
+}
+
+.mega-menu-title {
+  background-color: #050505;
+  display: flex;
+  gap: 17px;
+  padding: 15px;
+  font-size: 15px;
+  font-family: "roboto condensed", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+}
+.flex-row-container-left:hover .mega-menu {
+  background-color: #ff0606;
+  display: inline;
+}
+.mega-menu-title:hover + .mega-menu {
+  background-color: #fdfdfd;
+  display: inline;
+}
+.mega-menu {
+  width: 400px;
+  left: 1px;
+  position: absolute;
+  display: none;
+  color: #010101;
+}
+.mega-menu li {
+  font-size: 14px;
+  font-family: "roboto condensed", sans-serif;
+  gap: 10px;
+  align-items: center;
+  display: flex;
+  padding: 2px;
+  border: 1px solid rgb(228, 228, 228);
+}
+.mega-menu li:hover {
+  cursor: pointer;
+  background-color: #f8f8f8;
+  color: #ed930c;
+}
+.imgNAV {
+  margin-left: 10px;
+}
+
+.flex-row-right-ul {
+  font-family: "roboto condensed", sans-serif;
+  text-decoration: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.flex-row-right-ul a {
+  font-size: 14px;
+  text-decoration: none;
+}
+.flex-row-right-ul a:hover {
+  color: #ebcdcd;
+}
+.flex-row-title {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.flex-row-left:hover .mega-menu {
+  display: flex;
+  flex-direction: column;
+}
+/* ----------slice-------- */
+
+/* thiết lập style cho slideshow container */
+.slideshow-container {
+  max-width: 1600px;
+  position: relative;
+  margin: auto;
+}
+/* ẩn hình ảnh cho phần tử slideshow */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  object-fit: cover;
+}
+/* thiết kế nút mũi tên*/
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin: 0 15px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(122, 121, 121, 0.8);
+}
+/* thiết kế nút mũi tên next nằm phía bên phải */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+.prev:hover,
+.next:hover {
+  color: #000000;
+  background-color: rgba(255, 250, 250, 0.8);
+}
+/* Thiết lập style cho nội dung của mỗi phần tử slideshow */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Thiết lập style cho số hiển thị của phần tử */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* thiết lập style  nút tròn điều khiển*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/* tạo hiệu ứng chuyển động fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* -----------------------slice-------------- */
+main {
+  background-image: url("../img/bgrBodyProduct.jpg");
+  /* background-color: #f8f8f8; */
+}
+.totallyPro1 {
+  width: 100%;
+}
+.img_3NVM {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.img_hr {
+  padding: 0 80px;
+  width: 100%;
+  position: relative;
+}
+.img_hr2 {
+  padding: 0 80px;
+  width: 100%;
+  position: relative;
+}
+.hr_h1 {
+  color: whitesmoke;
+  font-family: "Yeseva One", cursive;
+  right: 170px;
+  position: absolute;
+  bottom: 120px;
+}
+.hr_h2 {
+  color: whitesmoke;
+  font-family: "Yeseva One", cursive;
+  left: 170px;
+  position: absolute;
+  bottom: 120px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* -------------------3NVM--------------- */
+.title_3NVM {
+  padding: 0 80px;
+  width: 100%;
+  text-align: center;
+  background-color: #000000;
+}
+.title_3NVM h4 {
+  padding: 0 100px;
+  width: 100%;
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+  color: rgb(159, 111, 111);
+}
+.title_3NVM p {
+  color: rgb(216, 187, 187);
+  width: 100%;
+  line-height: 1.5;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+}
+.seller {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.container__3NVM {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.product_3NVM {
+  transition: transform 1s ease;
+  background-image: url("../img/bgPrice.jpg");
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255);
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.product_3NVM p {
+  font-family: "Bruno Ace SC", cursive;
+}
+.product_3NVM:hover {
+  transform: scale(1.1);
+}
+.container {
+  padding: 0 80px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.product1 {
+  box-shadow: 10px 4px 19px #d3d3d1;
+  transition: transform 1s ease;
+  background-image: url("img/bgPrice.jpg");
+  cursor: pointer;
+  border: 1px solid rgb(220, 218, 218);
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  padding: 25px 0;
+}
+.product1:hover {
+  border: 2px solid rgb(0, 202, 253);
+  transform: scale(1.1);
+}
+.product1 img {
+  padding: 10px;
+}
+
+.product1 p {
+  color: rgb(247, 247, 247);
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Work Sans", sans-serif;
+  /* font-family: "Yeseva One", cursive; */
+}
+
+.bx-cart-add {
+  display: none;
+  color: #020202;
+  font-size: 29px;
+  right: 25px;
+  bottom: 145px;
+  position: absolute;
+  transition: transform 1s ease;
+}
+.bx-cart-add:hover {
+  transform: scale(1.4);
+  opacity: 0.6;
+}
+.flex_footer {
+  background-color: #0a0a0a;
+  position: relative;
+}
+
+.flex_footer_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.flex_foot a {
+  text-decoration: none;
+  margin: 10px;
+  color: rgb(188, 188, 188);
+}
+.flex_foot a:hover {
+  color: #f2f2f2;
+}
+.imgfot {
+  display: flex;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    width: 100%;
+  }
+}
+
+.img_footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.img_footer a {
+  display: inline-block;
+  width: calc(50% - 100px);
+}
+
+.flex_footer_img2 {
+  width: 40%;
+  float: right;
+  margin-right: 18px;
+}
+.img_fb {
+  text-align: center;
+  padding: 0px 20px;
+}
+.img_fb img {
+  width: 50%;
+}

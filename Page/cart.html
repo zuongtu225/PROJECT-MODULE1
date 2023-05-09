@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="../CSS/cart.css">
+        <link
+          href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Yeseva+One&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="shortcut icon"
+          href="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Trung-Nguyen.png"
+          type="image/x-icon"
+        />
+        <link
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet"
+        />
+        <title>Trung Nguyên Legend</title>
+      </head>
+<body>
+    <header>    
+        <div class="top__header">
+          <div class="top__header__left">
+            <div class="logo1">         
+              <img class="logowinter" src="../img/logowinter.png" alt="">
+            </div>       
+            <div class="logo2">
+              <img src="../img/Logo-Trung-Nguyen.webp" alt=""> 
+            </div>   
+          </div>    
+          <div class="header__main__button">
+              <a href="http://127.0.0.1:5500/index.html">GIỎ HÀNG CỦA BẠN</a>
+            
+            </div>   
+            <a href="http://127.0.0.1:5500/index.html"><i class='bx bxs-cart-download'>_Săn sale thôi</i></a>
+            <ul class="top__header__right" id="render-user-right">            
+                      
+              <li>
+                <a href="../index.html">
+                 <i class='bx bxs-home cart'></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ------------ -->
+
+        </div>
+       
+        </header>   
+            <br>
+            <br>
+    <main>
+        <div class="container-table">
+            <table class="render" cellpadding="10px">
+              <thead>
+                <tr>
+                <th><input id="choose" type="text"/> </th>
+                  <th>Sản phẩm</th>
+                  <th>Hình ảnh</th>
+                  <th>Đơn giá</th>
+                  <th>Số lượng</th>
+                  <th>Số tiền</th>
+                  <th>Thao tác</th>
+                </tr>
+              </thead>
+                <tbody>
+                    
+                </tbody>
+               <tfoot>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="valueTotaly"></td>
+                <td><button class="btnPay" onclick="handlePay()">Thanh toán</button> </td></tfoot>
+            </table>
+          </div>
+    </main>
+    <script src="../Js/cart.js"></script>
+</body>
+</html>

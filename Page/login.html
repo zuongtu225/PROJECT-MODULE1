@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css "
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/login_register.css" />
+    <link rel="stylesheet" href="./user.html" />
+  </head>
+  <body>
+    <header>
+      <form action="" id="login" class="login">
+        <p class="p_title">Đăng nhập</p>
+
+        <div class="form-input">
+          <input
+            type="text"
+            placeholder="Email"
+            id="infoEmail"
+            autocomplete="on"
+          />
+          <p class="error" id="email_MSG"></p>
+        </div>
+        <div class="form-input">
+          <input
+            type="password"
+            id="passWord"
+            placeholder="Mật khẩu"
+            autocomplete="on"
+          />
+          <p class="error" id="password_MSG"></p>
+        </div>
+
+        <input
+          type="submit"
+          id="loginSubmit"
+          class="input-login"
+          onclick="handleAdmin()"
+          value="Đăng nhập"
+        />
+        <div class="go">
+          <a href="./signup.html">Đăng Ký</a>
+          <i class="bx bxs-chevrons-right"></i>
+        </div>
+        <!-- -----info -->
+      </form>
+    </header>
+
+    <script src="../Js/login.js"></script>
+    <script src="../Js/admin.js"></script>
+  </body>
+</html>

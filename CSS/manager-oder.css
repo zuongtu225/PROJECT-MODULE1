@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-body {
+  background-color: #f0ecec;
+  padding: 15px;
+  width: 100%;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.container-content {
+}
+.container-nav-left {
+  background-color: #fcfcfc;
+  text-align: center;
+  align-items: center;
+  border: 3px solid #090909;
+}
+.nav-left-top {
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  background-color: #000000;
+  margin-bottom: 30px;
+}
+.nav-left-top i {
+  color: #ffffff;
+  font-size: 50px;
+}
+.nav-left-top img {
+  width: 50px;
+  height: 50px;
+}
+.top-left-page {
+  margin-left: 15px;
+  font-size: 54px;
+  font-family: "Vina Sans", cursive;
+}
+
+table {
+  background-color: #ffffff;
+}
+.title-admin {
+  font-size: 19px;
+  color: #80ceff;
+  font-family: "Braah One", cursive;
+  font-weight: bold;
+}
+.nav-table {
+  margin: 5px 0px;
+  width: 100%;
+  border: 3px solid rgb(4, 204, 254);
+  font-family: "sigmar", cursive;
+  font-weight: bold;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.nav-table i {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+.nav-table p {
+  color: rgb(0, 0, 0);
+}
+.nav-left-ul {
+  list-style-type: none;
+}
+.nav-table {
+  text-decoration: none;
+}
+.nav-top-info {
+  margin-right: 10px;
+  margin-top: 19px;
+  border: 4px solid rgb(0, 212, 249);
+  border-radius: 13px;
+  gap: 20px;
+  padding: 10px;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  align-items: center;
+  background-color: #fff;
+}
+.top-right-info {
+  font-family: "Darumadrop One", cursive;
+  display: flex;
+  gap: 10px;
+}
+
+#input-search {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid rgb(127, 209, 241);
+}
+
+.input-search {
+  padding: 40px 0px;
+  position: relative;
+}
+
+.input-search i {
+  font-size: 25px;
+  opacity: 0.8;
+  position: absolute;
+  right: 10px;
+  top: 49px;
+}
+.singup {
+  padding: 40px 10px;
+  transition: tranform 6s ease;
+  cursor: pointer;
+  gap: 5px;
+  display: flex;
+  margin-left: 4 0px;
+}
+.singup:hover {
+  transform: scale(1.1);
+}
+.singup a {
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+  margin-top: 5px;
+}
+.singup i {
+  font-size: 29px;
+  margin-top: 5px;
+}
+.container-table {
+  padding: 30px 50px;
+}
+table {
+  border: 3px solid rgb(77, 211, 255);
+  border-collapse: collapse;
+}
+th,
+tr,
+td {
+  padding: 10px 50px;
+  border: 3px solid rgb(77, 211, 255);
+}
